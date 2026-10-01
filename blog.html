@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog</title>
+</head>
+<body class="bg-[#F4F7FF] mx-3 sm:mx-6 lg:mx-15 my-3 sm:my-5">
+
+    <div class="header bg-white px-4 sm:px-7 py-3 sm:py-4 rounded-xl flex justify-between items-center gap-3">
+
+        <div class="h-left flex items-center min-w-0">
+            <img src="./img/photo_2026-09-16 12.35.26.jpeg" class="w-10 sm:w-13 mr-2" alt="logo">
+            <h1 class="text-2xl sm:text-4xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+
+        <div class="h-right">
+            <button id="blog-back-btn" class="rounded-lg cursor-pointer px-3 py-2 sm:p-4 bg-blue-600 text-white text-base sm:text-xl whitespace-nowrap">Back to Desk</button>
+        </div>
+    </div>
+
+    <div class="mt-4 sm:mt-5 mb-4 sm:mb-5">
+      <h1 class="text-xl sm:text-2xl font-bold text-center">Blogs</h1>
+    </div>
+
+    <div class="flex flex-col gap-3 sm:gap-5">
+
+        <div class="bg-white rounded-lg">
+            <div class="border-b border-dashed border-gray-500">
+                <h1 class="p-4 sm:p-5 text-lg sm:text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div>
+                <p class="p-4 sm:p-5 text-gray-400 text-sm sm:text-base">We can select elements using getElementById, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll.</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+            <div class="border-b border-dashed border-gray-500">
+                <h1 class="p-4 sm:p-5 text-lg sm:text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            </div>
+            <div>
+                <p class="p-4 sm:p-5 text-gray-400 text-sm sm:text-base">innerHTML returns HTML content, innerText gets visible text, and textContent retrieves all text, including hidden elements.</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+            <div class="border-b border-dashed border-gray-500">
+                <h1 class="p-4 sm:p-5 text-lg sm:text-xl font-bold">Question-3: What is event delegation in the DOM?</h1>
+            </div>
+            <div>
+                <p class="p-4 sm:p-5 text-gray-400 text-sm sm:text-base">Event delegation is a technique where you add a single event listener to a parent element to handle events for all its current and future child elements, leveraging event bubbling.</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+            <div class="border-b border-dashed border-gray-500">
+                <h1 class="p-4 sm:p-5 text-lg sm:text-xl font-bold">Question-4: What is event bubbling in the DOM?</h1>
+            </div>
+            <div>
+                <p class="p-4 sm:p-5 text-gray-400 text-sm sm:text-base">Event bubbling is a mechanism in the DOM where an event triggered on a child element propagates upward through its parent elements in the hierarchy.</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg">
+            <div class="border-b border-dashed border-gray-500">
+                <h1 class="p-4 sm:p-5 text-lg sm:text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            </div>
+            <div>
+                <p class="p-4 sm:p-5 text-gray-400 text-sm sm:text-base">We can create an element using document.createElement(), add it with appendChild() and remove it with removeChild().</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    document.getElementById("blog-back-btn").addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+    </script>
+
+</body>
+</html>
